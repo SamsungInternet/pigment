@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/oui-css/oui.css">
+    <link rel="stylesheet" type="text/css" href="css/pigment.css" >
+    <title>Document</title>
+
+</head>
+<body>
+    <main class="container bg-app">
+        <header>
+            <h1 class="oui-page-title">Pigment</h1>
+        </header>
+        <section>
+            <h2 class="oui-bubble-title">Formats</h2>
+                <div class="oui-bubble" >
+                    <fieldset class="format-inputs-bubble">
+                    <label class="oui-label format-item">
+                        <span class="oui-input-textual-embed-title">RGB</span>
+                        <input type="text" placeholder="rgb(255, 255, 255)"  class="oui-input-textual-embed formats-input">
+                    </label>
+                    <label class="oui-label format-item">
+                        <span class="oui-input-textual-embed-title">CMYK</span>
+                        <input type="text" placeholder="cmyk(0%, 0%, 0%, 0%)"  class="oui-input-textual-embed formats-input">
+                    </label>
+                    <label class="oui-label format-item">
+                        <span class="oui-input-textual-embed-title">HSL</span>
+                        <input type="text" placeholder="hsl(0, 0%, 100%)"  class="oui-input-textual-embed formats-input">
+                    </label>
+                </fieldset>
+            </div>
+        </section>
+        <section>
+            <h2 class="oui-bubble-title">Current format: HEX</h2>
+            <input type="text" class="oui-input-textual current-color-text" placeholder="#FFFFFF">
+        </section>
+        <section>
+            <div class="main-menu-layout">
+                <button class="oui-icon-button"><i class="oui-icon--large oui-icon-save"></i></button>
+                <svg viewBox="0 0 274 274" xmlns="http://www.w3.org/2000/svg" class="col-selection-ui">
+                    <circle cx="207.99" cy="417.248" r="115.375" fill="#fff" stroke="#dcdcdc" stroke-width=".56" transform="matrix(1.1839 0 0 1.1839 -109.312 -357.053)"/>
+                    <circle cx="207.99" cy="417.248" r="115.375" fill="#4d5cc1" transform="matrix(.95943 0 0 .95943 -62.626 -263.393)"/>
+                </svg>
+                <button class="oui-icon-button"><i class="oui-icon--large oui-icon-palette"></i></button>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>
