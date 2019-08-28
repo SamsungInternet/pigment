@@ -1,3 +1,6 @@
+:root {
+    --app-variable-accent: #4D5CC1;
+}
 
 header {
     display: flex;
@@ -49,4 +52,18 @@ header {
 .format-inputs-bubble {
     display: flex;
     flex-direction: column;
+}
+
+/*elements of the UI that will change it's color based on the app variable accent*/
+.oui-input-textual-embed-title {
+    color: var(--app-variable-accent);
+}
+
+.oui-icon-button {
+    background-color: var(--app-variable-accent);
+}
+
+.oui-input-textual-embed:focus,
+.oui-input-textual-embed:hover {
+    box-shadow: 0px 1.5px 0px 0px var(--app-variable-accent);
 }
