@@ -1,0 +1,52 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template: 2fr auto 1fr 1fr / 1fr;
+    height: 100vh;
+}
+
+.formats-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-app {
+    background-image: url('../images/powder.webp');
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: right -50vh bottom -30vh;
+}
+
+.main-menu-layout {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-selection-ui {
+    height: 7rem;
+    margin: 2rem;
+}
+
+.current-color-text {
+    width: 100vw;
+    margin: auto;
+}
+
+.formats-input {
+    width: 100%;
+}
+
+.format-inputs-bubble {
+    display: flex;
+    flex-direction: column;
+}
