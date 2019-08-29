@@ -1,3 +1,6 @@
+:root {
+    --app-variable-accent: #4D5CC1;
+}
 
 header {
     display: flex;
@@ -8,7 +11,7 @@ header {
 
 .container {
     display: grid;
-    grid-template: 2fr auto 1fr 1fr / 1fr;
+    grid-template: 2fr 1fr auto 150px / 1fr;
     height: 100vh;
 }
 
@@ -21,7 +24,7 @@ header {
     background-image: url('../images/powder.webp');
     background-repeat: no-repeat;
     background-size: 100vh;
-    background-position: right -50vh bottom -30vh;
+    background-position: right -50vh top -30vh;
 }
 
 .main-menu-layout {
@@ -49,4 +52,18 @@ header {
 .format-inputs-bubble {
     display: flex;
     flex-direction: column;
+}
+
+/*elements of the UI that will change it's color based on the app variable accent*/
+.oui-input-textual-embed-title {
+    color: var(--app-variable-accent);
+}
+
+.oui-icon-button {
+    background-color: var(--app-variable-accent);
+}
+
+.oui-input-textual-embed:focus,
+.oui-input-textual-embed:hover {
+    box-shadow: 0px 1.5px 0px 0px var(--app-variable-accent);
 }
