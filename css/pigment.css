@@ -11,7 +11,7 @@ header {
 
 .container {
     display: grid;
-    grid-template: 2fr 1fr auto 150px / 1fr;
+    grid-template: 2fr 1fr auto 140px / 1fr;
     height: 100vh;
 }
 
@@ -71,5 +71,18 @@ header {
 #color-preview {
     transition-property: fill;
     transition-duration: .5s;
+
+}
+
+@media (min-width: 800px) {
+    section {
+        margin: auto 20vw;
+        max-width: 60vw;
+    }
+
+    .current-color-text {
+        width: 100%;
+        margin: auto;
+    }
 
 }
