@@ -74,6 +74,12 @@ header {
 
 }
 
+.oui-bubble {
+    background-color: rgba(252, 252, 252, .95);
+  }
+
+  /*media query elements */
+
 @media (min-width: 800px) {
     section {
         margin: auto 20vw;
