@@ -24,7 +24,7 @@ header {
     background-image: url('../images/powder.webp');
     background-repeat: no-repeat;
     background-size: 100vh;
-    background-position: right -50vh top -30vh;
+    background-position: right -50vh bottom -30vh;
 }
 
 .main-menu-layout {
