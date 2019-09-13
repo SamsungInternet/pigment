@@ -34,10 +34,15 @@ function hexToCMYK(hex) {
    
     var minCMY = Math.min(c,Math.min(m,y));
    
-    c = parseInt(( (c - minCMY) / (1 - minCMY) ) *100) ;
-    m = parseInt (( (m - minCMY) / (1 - minCMY) ) *100 );
-    y = parseInt (((y - minCMY) / (1 - minCMY) ) *100);
-    k = parseInt(minCMY*100);
+    if(minCMY !== 1){
+   
+      c = parseInt(( (c - minCMY) / (1 - minCMY) ) *100) ;
+      m = parseInt (( (m - minCMY) / (1 - minCMY) ) *100 );
+      y = parseInt (((y - minCMY) / (1 - minCMY) ) *100);
+    
+    }else{
+      c=m=y=0;
+    }
 
     let CMYK = new Object;
     CMYK['c'] = c;
