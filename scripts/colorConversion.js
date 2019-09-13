@@ -44,6 +44,9 @@ function hexToCMYK(hex) {
       c=m=y=0;
     }
 
+    k = parseInt(minCMY*100);
+
+
     let CMYK = new Object;
     CMYK['c'] = c;
     CMYK['m'] = m;
